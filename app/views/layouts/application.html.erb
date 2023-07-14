@@ -11,9 +11,9 @@
   </head>
 
   <body>
-  <%# if user_signed_in? %>
-    <%# link_to destroy_user_session_path, 'logout', method: :delete %>
-  <%# end %>
+  <% if user_signed_in? %>
+    <%= button_to 'logout', destroy_user_session_url, method: :delete %>
+  <% end %>
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>

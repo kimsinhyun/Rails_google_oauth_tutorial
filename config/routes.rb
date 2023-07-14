@@ -13,7 +13,5 @@ Rails.application.routes.draw do
                sessions: 'users/sessions'
              }
 
-  namespace :user do
-    root to: 'static_pages#home'
-  end
+  resources :users
 end
